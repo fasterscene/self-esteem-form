@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self Esteem Test</title>
+<style>
+    div[name] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    form {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<h1>The Self Esteem Test</h1>
+<div>
+<p>Refer to <a href="https://medium.com/know-thy-power/the-90-day-self-esteem-challenge-610bdc5dfc2d
+ ">the-90-day-self-esteem-test</a>   For the original concept.
+</p>
+</div>
+<form action="/submit" method="POST">
+    <div name="nigredo" style="background-color:black;color:white">
+        <div>
+            <h2>Self-Awareness: Shadow Revealing</h2>
+            <p>Identify traits, emotions, desires, and beliefs you consider negative or limiting.</p>
+        <p>Examples: Sad, Angry, Unworthy, Fearful, Ashamed, Stuck, Inadequate, Anxious, Jealous, Unlovable</p>
+        <textarea id="nigredo_input" name="nigredo_input" rows="4" cols="50" required></textarea><br>
+            <button type="button" onclick="scrollToNext('albedo')">Next</button>
+        </div>
+    </div>
+
+    <div name="albedo" style="background-color:white;color:darkgrey">
+        <div>
+            <h2>Self-Acceptance: Coping Mechanisms</h2>
+            <p>Recognize and acknowledge your coping mechanisms and distractions.</p>
+            <p>Examples: Overeating, Procrastinating, Avoidance, Social media, Substance use, Overworking, Lashing out, Self-isolation</p>
+            <textarea id="albedo_input" name="albedo_input" rows="4" cols="50" required></textarea><br>
+            <button type="button" onclick="scrollToNext('citrinitas')">Next</button>
+        </div>
+    </div>
+
+    <div name="citrinitas" style="background-color:yellow;color:black">
+        <div>
+            <h2>Self-Responsibility: Gratitude and Progress</h2>
+            <p>List things you're grateful for and areas where you've made progress.</p>
+            <p>Examples: Supportive friends, Health, Learning new skills, Overcoming challenges, Taking initiative, Practicing self-care</p>
+            <textarea id="citrinitas_input" name="citrinitas_input" rows="4" cols="50" required></textarea><br>
+            <button type="button" onclick="scrollToNext('rubedo')">Next</button>
+        </div>
+    </div>
+
+    <div name="rubedo" style="background-color:red;color:black">
+        <div>
+            <h2>Self-Assertiveness: Manifesting Confidence</h2>
+            <p>Describe the qualities of your most confident, empowered self.</p>
+            <p>Examples: Confident, Strong, Kind, Assertive, Authentic, Radiant, Grounded, Creative, Inspiring</p>
+            <textarea id="rubedo_input" name="rubedo_input" rows="4" cols="50" required></textarea><br>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+<script>
+function scrollToNext(sectionName) {
+    const nextSection = document.querySelector(`div[name='${sectionName}']`);
+    if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+</script>
+
+
+</body>
+</html>
