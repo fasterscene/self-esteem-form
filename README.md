@@ -10,4 +10,7 @@ The form is based on the following matrix:
 https://miro.medium.com/v2/resize:fit:720/format:webp/1*nmiL0m3dcEU7yaC_pdbWcg.png
 ![fields](https://github.com/user-attachments/assets/aff575f9-95bc-4b3f-8d05-f359743e3955)
 
+The form will save the data to CSV (dated)
+Ths can then be retrieved and viewed in tabular format (answers given for each catagory)
 
+The final stage will be to create a report on progress or what has changed. Possibly using an LLM to do the heavy lifting
