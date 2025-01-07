@@ -14,3 +14,5 @@ The form will save the data to CSV (dated)
 Ths can then be retrieved and viewed in tabular format (answers given for each catagory)
 
 The final stage will be to create a report on progress or what has changed. Possibly using an LLM to do the heavy lifting
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z218L728)
